@@ -53,7 +53,7 @@ export function HeroSection() {
         }}
         className="mt-6 text-lg z-20 md:text-xl max-w-2xl text-center text-white px-4"
       >
-        I’m a software engineer with a passion for building scalable
+        I&apos;m a software engineer with a passion for building scalable
         applications and exploring new technologies. Learn more about me below.
       </motion.p>
     </div>

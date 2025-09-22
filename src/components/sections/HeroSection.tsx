@@ -1,11 +1,17 @@
 "use client";
 import { motion } from "motion/react";
-import { HeroHighlight, Highlight } from "../ui/hero-highlight";
+import { HeroHighlight } from "../ui/hero-highlight";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { Boxes } from "../ui/background-boxes";
+import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   return (
-    <HeroHighlight>
+    <div className="h-dvh relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
+      <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+
+      <Boxes />
+
       <motion.h1
         initial={{
           opacity: 0,
@@ -19,18 +25,18 @@ export function HeroSection() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-3xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+        className="text-6xl px-4 md:text-6xl lg:text-8xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
         {
           <>
             <TextGenerateEffect
               words="Hello I'm Gautam Krishnan"
-              className="text-5xl"
+              className=""
               duration={1}
             />
           </>
         }
       </motion.h1>
-    </HeroHighlight>
+    </div>
   );
 }

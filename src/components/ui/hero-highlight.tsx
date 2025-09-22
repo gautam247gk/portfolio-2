@@ -14,6 +14,23 @@ export const HeroHighlight = ({
 }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+  const [isMouseActive, setIsMouseActive] = React.useState(false);
+  // For natural animation
+  React.useEffect(() => {
+    if (!isMouseActive) {
+      let frame: number;
+      let t = 0;
+      const animate = () => {
+        // Animate in a circular or drifting pattern
+        mouseX.set(150 + 50 * Math.cos(t));
+        mouseY.set(150 + 50 * Math.sin(t));
+        t += 0.02;
+        frame = requestAnimationFrame(animate);
+      };
+      animate();
+      return () => cancelAnimationFrame(frame);
+    }
+  }, [isMouseActive, mouseX, mouseY]);
 
   // SVG patterns for different states and themes
   const dotPatterns = {
@@ -37,11 +54,16 @@ export const HeroHighlight = ({
 
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
+    setIsMouseActive(true);
+  }
+
+  function handleMouseLeave() {
+    setIsMouseActive(false);
   }
   return (
     <div
       className={cn(
-        "group relative flex h-[40rem] w-full items-center justify-center bg-white dark:bg-black",
+        "group relative flex h-dvh w-full items-center justify-center bg-white dark:bg-black",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
@@ -72,6 +94,7 @@ export const HeroHighlight = ({
           maskImage: useMotionTemplate`
             radial-gradient(
               200px circle at ${mouseX}px ${mouseY}px,
+                onMouseLeave={handleMouseLeave}
               black 0%,
               transparent 100%
             )

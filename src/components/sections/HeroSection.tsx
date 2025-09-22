@@ -37,6 +37,25 @@ export function HeroSection() {
           </>
         }
       </motion.h1>
+      <motion.p
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.5,
+          delay: 1,
+          ease: [0.4, 0.0, 0.2, 1],
+        }}
+        className="mt-6 text-lg z-20 md:text-xl max-w-2xl text-center text-white px-4"
+      >
+        I’m a software engineer with a passion for building scalable
+        applications and exploring new technologies. Learn more about me below.
+      </motion.p>
     </div>
   );
 }

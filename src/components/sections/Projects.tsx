@@ -71,9 +71,18 @@ const items = [
     url: "https://www.npmjs.com/package/socket-io-azure-service-bus-emitter",
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
+    title: "Rockbell Landing Page",
+    description:
+      "Landing page for Rockbell, a fictional company that runs an events platform.",
+    header: (
+      <Image
+        src="/rockbell.png"
+        alt="Rockbell Landing Page"
+        className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
+        width={300}
+        height={200}
+      />
+    ),
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
@@ -86,7 +95,7 @@ const items = [
   {
     title: "The LRU Cache",
     description:
-      "A simple LRU cache library supporting O(1) set, get and eviction of old keys in TypeScript.",
+      "An LRU cache library supporting O(1) set, get and eviction of old keys in TypeScript.",
     header: (
       <Image
         src="/npmjs-logo.png"

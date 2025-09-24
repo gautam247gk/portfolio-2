@@ -51,7 +51,12 @@ export default function NavbarSection() {
 
         <NavItems items={navItems} />
         <div className="flex items-center gap-4">
-          <NavbarButton variant="primary">Resume</NavbarButton>
+          <NavbarButton
+            variant="primary"
+            href="https://docs.google.com/document/d/1qx-FG1OVblMZyJe0f4tR_fJG7lvfa7LRQ2zKQJH_8zs/edit?usp=sharing"
+          >
+            Resume
+          </NavbarButton>
         </div>
       </NavBody>
 
@@ -89,6 +94,7 @@ export default function NavbarSection() {
               onClick={() => setIsMobileMenuOpen(false)}
               variant="primary"
               className="w-full"
+              href="https://docs.google.com/document/d/1qx-FG1OVblMZyJe0f4tR_fJG7lvfa7LRQ2zKQJH_8zs/edit?usp=sharing"
             >
               Resume
             </NavbarButton>

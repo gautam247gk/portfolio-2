@@ -1,9 +1,7 @@
 "use client";
 import { motion } from "motion/react";
-import { HeroHighlight } from "../ui/hero-highlight";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { Boxes } from "../ui/background-boxes";
-import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   return (

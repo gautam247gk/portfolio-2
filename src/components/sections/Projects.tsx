@@ -9,6 +9,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 export function Projects() {
   return (
@@ -36,6 +37,7 @@ export function Projects() {
             header={item.header}
             icon={item.icon}
             className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+            url={item.url}
           />
         ))}
       </BentoGrid>
@@ -53,10 +55,20 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    title: "The Socket.io Azure Service Bus Emitter",
+    description:
+      "An emitter module that integrates with Socket.io and the Azure Service Bus adapter enabling other JavaScript applications to communicate with the Socket.io servers.",
+    header: (
+      <Image
+        src="/npmjs-logo.png"
+        alt="Socket.io Azure Service Bus Emitter"
+        className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
+        width={300}
+        height={200}
+      />
+    ),
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    url: "https://www.npmjs.com/package/socket-io-azure-service-bus-emitter",
   },
   {
     title: "The Art of Design",
@@ -72,16 +84,36 @@ const items = [
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
+    title: "The LRU Cache",
+    description:
+      "A simple LRU cache library supporting O(1) set, get and eviction of old keys in TypeScript.",
+    header: (
+      <Image
+        src="/npmjs-logo.png"
+        alt="LRU Cache"
+        className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
+        width={300}
+        height={200}
+      />
+    ),
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    url: "https://www.npmjs.com/package/smart-lru-ts",
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
+    title: "The Weather App",
+    description:
+      "A simple React PWA that provides weather forecasts using the Open Weather API.",
+    header: (
+      <Image
+        src="/weather.png"
+        alt="Weather App"
+        width={300}
+        height={200}
+        className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
+      />
+    ),
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+    url: "https://gautam247gk.github.io/weather/",
   },
   {
     title: "The Spirit of Adventure",

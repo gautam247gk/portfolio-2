@@ -41,6 +41,13 @@ export function Projects() {
           />
         ))}
       </BentoGrid>
+      <div className="mx-auto my-10 text-center text-sm text-neutral-500 dark:text-neutral-400">
+        <span>
+          *Some of these projects may be marked to private in the future and the
+          links may not work, please get in touch if you would like to know
+          more.
+        </span>
+      </div>
     </>
   );
 }
@@ -49,10 +56,20 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
+    title: "Socket Io Admin UI",
+    description:
+      "An admin dashboard for managing Socket.io servers, based on the Socket.io module @socket.io/admin-ui.",
+    header: (
+      <Image
+        src="/dashboard.png"
+        alt="Socket.io Admin UI"
+        className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
+        width={600}
+        height={400}
+      />
+    ),
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    url: "https://gautam247gk.github.io/socket.io-admin-ui/",
   },
   {
     title: "The Socket.io Azure Service Bus Emitter",
@@ -63,8 +80,8 @@ const items = [
         src="/npmjs-logo.png"
         alt="Socket.io Azure Service Bus Emitter"
         className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
-        width={300}
-        height={200}
+        width={600}
+        height={400}
       />
     ),
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
@@ -79,18 +96,28 @@ const items = [
         src="/rockbell.png"
         alt="Rockbell Landing Page"
         className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
-        width={300}
-        height={200}
+        width={600}
+        height={400}
       />
     ),
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    url: "https://rockbell.vercel.app/",
   },
   {
-    title: "The Power of Communication",
+    title: "Relay Beacon",
     description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+      "Relay Beacon is a mass communication tool that provides real-time notifications and updates to desktop users in an organization through WebSockets, built with Node.js, Express, Electron and Socket.io.",
+    header: (
+      <Image
+        src="/relayBeacon.png"
+        alt="Relay Beacon"
+        className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
+        width={2160}
+        height={1080}
+      />
+    ),
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    url: "https://github.com/gautam247gk/relay-beacon",
   },
   {
     title: "The LRU Cache",
@@ -101,8 +128,8 @@ const items = [
         src="/npmjs-logo.png"
         alt="LRU Cache"
         className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
-        width={300}
-        height={200}
+        width={600}
+        height={4200}
       />
     ),
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
@@ -116,8 +143,8 @@ const items = [
       <Image
         src="/weather.png"
         alt="Weather App"
-        width={300}
-        height={200}
+        width={600}
+        height={400}
         className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
       />
     ),
@@ -125,9 +152,18 @@ const items = [
     url: "https://gautam247gk.github.io/weather/",
   },
   {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton />,
+    title: "Away Day Planner (WinForms + .NET)",
+    description:
+      "Built a secure desktop app using C# WinForms, 3-tier architecture, AES encryption, and Entity Framework ORM. Stored data in LocalDB and applied MVP pattern for scalable code.",
+    header: (
+      <Image
+        src="/ADP.png"
+        alt="Relay Beacon"
+        className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover "
+        width={2160}
+        height={1080}
+      />
+    ),
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];

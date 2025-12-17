@@ -6,6 +6,56 @@ import { Timeline } from "@/components/ui/timeline";
 export function Experience() {
   const data = [
     {
+      title: "Nov 2025 - Present",
+      content: (
+        <div className="flex flex-col items-start justify-center">
+          <div className="flex flex-col mb-6 md:flex-row md:items-start md:justify-between w-full gap-6">
+            <div className="flex-1 justify-around">
+              <h2 className="mb-4 text-5xl font-normal text-neutral-800 dark:text-neutral-200">
+                Senior Analyst Developer
+              </h2>
+              <h3 className="mb-2 text-2xl font-normal text-neutral-800 dark:text-neutral-200">
+                University of Huddersfield, Huddersfield, UK
+              </h3>
+            </div>
+            <div className="flex-shrink-0 ">
+              <Image
+                src="https://www.hud.ac.uk/media/universityofhuddersfield/styleassets/images/2016homepageimages/uoh-logo-2019-white.svg"
+                alt="logo"
+                width={300}
+                height={100}
+                className="w-56 h-auto object-contain"
+              />
+            </div>
+          </div>
+          <p className="mb-6 text-md font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            As a Senior Analyst Developer, I design and deliver advanced technical
+            solutions to support institutional operations. My role focuses on
+            analyzing complex business requirements, architecting scalable systems,
+            and implementing enterprise software solutions across the university.
+          </p>
+          <ul className="list-disc pl-5 space-y-2 text-md font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <li>
+              Analyze business requirements and translate them into technical
+              specifications for enterprise-grade applications.
+            </li>
+            <li>
+              Design and develop solutions to integrate university systems and
+              streamline operational workflows.
+            </li>
+            <li>
+              Collaborate with stakeholders across departments to identify
+              opportunities for digital transformation and process improvement.
+            </li>
+            <li>
+              Provide technical leadership and guidance on software development
+              best practices and architectural decisions.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
       title: "Jan 2024 - Present",
       content: (
         <div className="flex flex-col items-start justify-center">

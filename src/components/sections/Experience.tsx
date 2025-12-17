@@ -6,7 +6,52 @@ import { Timeline } from "@/components/ui/timeline";
 export function Experience() {
   const data = [
     {
-      title: "Jan 2024 - Present",
+      title: "Nov 2025 - Present",
+      content: (
+        <div className="flex flex-col items-start justify-center">
+          <div className="flex flex-col mb-6 md:flex-row md:items-start md:justify-between w-full gap-6">
+            <div className="flex-1 justify-around">
+              <h2 className="mb-4 text-5xl font-normal text-neutral-800 dark:text-neutral-200">
+                Senior Analyst Developer
+              </h2>
+              <h3 className="mb-2 text-2xl font-normal text-neutral-800 dark:text-neutral-200">
+                University of Huddersfield, Huddersfield, UK
+              </h3>
+            </div>
+            <div className="flex-shrink-0 ">
+              <Image
+                src="https://www.hud.ac.uk/media/assets/images/global/hud-logo.svg"
+                alt="logo"
+                width={300}
+                height={100}
+                className="w-56 h-auto  object-contain"
+              />
+            </div>
+          </div>
+          <p className="mb-6 text-md font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            Working as a Senior Analyst Developer, I focus on developing and
+            maintaining enterprise applications and data systems to support
+            university operations and strategic initiatives.
+          </p>
+          <ul className="list-disc pl-5 space-y-2 text-md font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+            <li>
+              Developing and maintaining enterprise-grade applications for
+              university-wide operations.
+            </li>
+            <li>
+              Building scalable data integration solutions to connect critical
+              systems and platforms.
+            </li>
+            <li>
+              Implementing modern development practices and technologies to
+              improve efficiency and reliability.
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      title: "Jan 2024 - Oct 2025",
       content: (
         <div className="flex flex-col items-start justify-center">
           <div className="flex flex-col mb-6 md:flex-row md:items-start md:justify-between w-full gap-6">

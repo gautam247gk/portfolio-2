@@ -20,7 +20,7 @@ export function Experience() {
             </div>
             <div className="flex-shrink-0 ">
               <Image
-                src="https://www.hud.ac.uk/media/assets/document/corporateidentity/HUD_Logo_White.svg"
+                src="https://www.hud.ac.uk/media/universityofhuddersfield/styleassets/images/2016homepageimages/uoh-logo-2019-white.svg"
                 alt="logo"
                 width={300}
                 height={100}

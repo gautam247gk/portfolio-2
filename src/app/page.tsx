@@ -1,5 +1,3 @@
-"use client";
-
 import { AboutMe } from "@/components/sections/AboutMe";
 import { HeroSection } from "@/components/sections/HeroSection";
 import NavbarSection from "@/components/sections/NavbarSection";
